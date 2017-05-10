@@ -1,1 +1,1 @@
-echo  $BRANCH_NAME
+echo "Branch name: ${env.BRANCH_NAME}"
