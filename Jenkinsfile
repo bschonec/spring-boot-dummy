@@ -1,5 +1,5 @@
 echo "Branch name: ${env.BRANCH_NAME}"
-BUILD = ${env.BRANCH_NAME} == 'master' ? 'latest' : ${env.BRANCH_NAME}
+BUILD = 'master'
 echo "Build: ${BUILD}"
 
 node ('master') {
