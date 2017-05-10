@@ -7,7 +7,7 @@ node ('master') {
     echo "Build: ${BUILD}"
     stage ('Build Building container') {
         echo "Build: ${BUILD}"
-        sh "docker build -t laszlocph/build-spring-boot-dummy:${BUILD} ."
+        sh "docker build -t laszlocph/build-spring-boot-dummy ."
     }
     stage ('Build in Container') {
         def CONTAINER_ID = sh (
